@@ -1,0 +1,68 @@
+
+/*MMENU*/
+
+#cs-menu ul.mm-listview li:hover {
+    background-color: rgba(114, 205, 128, 0.24);
+}
+
+nav#cs-menu{
+background-color: #212529;
+}
+#cs-menu .mm-navbar.mm-navbar-size-1.mm-hasbtns {
+    display: none;
+}
+#cs-menu ul.mm-listview a {
+  padding: 20px !important;
+  color: white;
+  border-color: rgba(235, 198, 198, 0.07) !important;
+}
+
+.cs-logout {
+    text-align: right;
+    padding: 7px;
+}
+.cs-logout a {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0px 20px;
+    cursor: pointer;
+    color: white;
+}
+.cs-logout a:hover {
+    text-decoration: none;
+    color: #aaff96;
+}
+a.cs-menuicon  i:hover {
+    color: white;
+    font-size: 30px;
+    color: #aaff96;
+    
+}
+.cs-menuicon{
+  font-size: 30px;
+  color: white;
+}
+.cs-menuicon i{
+  padding: 13px;
+}
+
+/*MEDIA QUERIES*/
+/* col-lg */
+@media (max-width:1200px){
+
+}
+
+/* col-md */
+@media (max-width:992px){
+
+}
+
+/* col-sm */
+@media (max-width:768px){
+
+}
+
+/* col-xs */
+@media (max-width:576px){
+
+}

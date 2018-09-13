@@ -1,0 +1,59 @@
+/*CMS*/
+.header-sen {
+    width: 100%;
+    height: 100vh;
+    background-color: currentColor;
+}
+ul.menu-sen li {
+    list-style-type: none;
+}
+ul.menu-sen li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+ul.menu-sen li a:hover{
+    background-color: #343434;
+}
+ul.menu-sen {
+    padding: 0px;
+}
+ul.menu-sen i {
+    color: white;
+    padding: 0px 10px 0px 0px ;
+}
+
+.dash-container{
+  /*background-color: red;*/
+  height: 100vh;}
+.pd-left10{
+padding: 0px 0px 0px 10px !important;
+}
+.admin-header {
+    background-color: #5f605f;
+    /*background-color: #2ab064;*/
+    width: 100%;
+}
+
+
+/*MEDIA QUERIES*/
+/* col-lg */
+@media (max-width:1200px){
+
+}
+
+/* col-md */
+@media (max-width:992px){
+
+}
+
+/* col-sm */
+@media (max-width:768px){
+
+}
+
+/* col-xs */
+@media (max-width:576px){
+
+}
