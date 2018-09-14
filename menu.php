@@ -39,7 +39,6 @@
 		<form action="data/cs_menu" method="POST" id="save_menuID">
 			<?php call_menu(); ?>
 				<input type="submit" name="save_menu"  id="save_menu" value="SAVE" class="secprimary_btn">
-				<input type="button" name="lastorder"  id="lastorder" value="lastorder" class="secprimary_btn">
 			</form>
 		</div>
 	</div>	<!-- col 10 end -->
@@ -47,7 +46,7 @@
 <?php
 function call_menu() {
 	require("data/database.php");
-	$ses_sqli = mysqli_query($con,"SELECT * FROM cs_addmenu ");
+	$ses_sqli = mysqli_query($con,"SELECT * FROM cs_addmenu ORDER BY addMenu_ID");
 	$x = 1;
 	echo "<div class='addMenu_input'>";
 	// echo "<div class='draggable_ ui-sortable'>";
@@ -59,10 +58,10 @@ function call_menu() {
 	
 echo "
  <li class='ui-state-default' style=''>
- <input type='text' name='order_".$x."' class='ui-state-default sortable-number' value='".$x."'>
+ <input type='hidden' name='order_".$x."' class='ui-state-default sortable-number' value='".$x."'>
 		<div class='dropdown-cus' type='button'>
 			<div class='slidx'>
-				<span>MENU<i class='fas fa-plus'></i></span>
+				<span>".$menu."<i class='fas fa-plus'></i></span>
 			</div>
 			 <div  class='mfields hidden h-label'>
 			  	<hr>
@@ -85,7 +84,7 @@ echo "
 	echo "</div>";
 	echo "</div>";
 
-	echo "<input type='text' name='addMenu_ctr' value='' class='addMenu_ctr'>";
+	echo "<input type='hidden' name='addMenu_ctr' value='' class='addMenu_ctr'>";
 
 }
 

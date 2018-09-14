@@ -22,8 +22,8 @@ $("#sortable_nav").sortable({
         $lis.each(function() {
             var $li = $(this);
             var newVal = $(this).index() + 1;
-            $(this).children('.sortable-number').val(newVal);
-            $(this).children('#item_display_order').val(newVal);
+            $(this).children('.sortable-number').attr('value', newVal);
+            $(this).children('#item_display_order').attr('value', newVal);
         });
     }
 });
@@ -101,6 +101,8 @@ $(document).ready(function(){
     $('.addMenu_btn').click(function(e){
     var ctr = parseInt($("#sortable_nav li:last-of-type .dropdown-cus .mfields input:last-child").val());
     $(".addMenu_ctr").val(ctr+1);
+    var order = parseInt($("#sortable_nav li:last-of-type input").val());
+    var order_ = order+1;
     var ads = ctr+1;
     var pass_Var;
           e.preventDefault();
@@ -110,12 +112,13 @@ $(document).ready(function(){
             url: 'data/addMenutab.php',
             data: {
               ads : ads,
+              order_ : order_,
             },
             success: function (result) {
                 pass_Var = result;
             }
           });
-            $('.addMenu_input').append(pass_Var);
+            $('#sortable_nav').append(pass_Var);
         });
 
 });
@@ -202,7 +205,14 @@ $(document).ready(function(){
 
 
 
+// ON CLICK ADD MENU
+//   $(document).on('click','.addMenu_btn',function(){
+//     var input = $('#counter');
+//     input.text(Number(input.text())+1);
+//     input.val(Number(input.val())+1);
+//     myFunction();
 
+// });
 
 
 

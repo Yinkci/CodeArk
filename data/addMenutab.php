@@ -1,12 +1,15 @@
 
 <?php 
 $ads = $_POST['ads']; 
+$order_ = $_POST['order_']; 
+
 ?>
 <br>
 <!-- <input type='text' name='dbMenu_<?php echo $ads; ?>'>
 <input type='hidden' value='<?php echo $ads; ?>' class='input-text' name='IDMenu_<?php echo $ads; ?>'> -->
 
-
+<li class='ui-state-default' style=''>
+ <input type='hidden' name='order_<?php echo $order_; ?>' class='ui-state-default sortable-number' value='<?php echo $order_; ?>'>
 <div class='dropdown-cus' type='button'>
 	<div class='slidx'>
 		<span>MENU<i class='fas fa-plus'></i></span>
@@ -23,3 +26,5 @@ $ads = $_POST['ads'];
 		<input type='hidden' value='<?php echo $ads; ?>' class='input-text' name='IDMenu_<?php echo $ads; ?>'>
 	</div>
 </div>
+
+</li>
