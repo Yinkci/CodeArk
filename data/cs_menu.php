@@ -15,14 +15,13 @@ if(isset($_POST['save_menu'])){
 		}
 		else{
 			$cs_Menus = $_POST["dbMenu_".$x];
-			$addMenu_ID = $_POST["IDMenu_".$x];
-			$OrderID = $_POST["order_".$x];
+			$OrderID = $_POST["IDMenu_".$x];
+			$OrderID_ = $_POST["order_".$x];
+			$cs_Links_ = $_POST["cs_Links_".$x];
 
-			$query = mysqli_query($con,"INSERT INTO cs_addmenu(addMenu_ID,cs_Menus)VALUES('$OrderID','$cs_Menus')");
-			echo "cs_Menus: ".$cs_Menus."<br>";
-			echo "addMenu_ID: ".$addMenu_ID."<br>";
-			echo "OrderID: ".$OrderID."<br>";
 
+			$query = mysqli_query($con,"INSERT INTO cs_addmenu(OrderID,cs_Menus,cs_Links)VALUES('$OrderID_','$cs_Menus','$cs_Links_')");
+		
 
 
 		}

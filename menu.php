@@ -46,7 +46,7 @@
 <?php
 function call_menu() {
 	require("data/database.php");
-	$ses_sqli = mysqli_query($con,"SELECT * FROM cs_addmenu ORDER BY addMenu_ID");
+	$ses_sqli = mysqli_query($con,"SELECT * FROM cs_addmenu ORDER BY OrderID");
 	$x = 1;
 	echo "<div class='addMenu_input'>";
 	// echo "<div class='draggable_ ui-sortable'>";
@@ -54,7 +54,9 @@ function call_menu() {
 
 	while($row = mysqli_fetch_array($ses_sqli)){
 		$menu = $row['cs_Menus'];
-		$menuID = $row['addMenu_ID'];
+		$menuID = $row['OrderID'];
+		$cs_Links = $row['cs_Links'];
+
 	
 echo "
  <li class='ui-state-default' style=''>
@@ -66,7 +68,7 @@ echo "
 			 <div  class='mfields hidden h-label'>
 			  	<hr>
 					<label >NAME:</label><input type='text' value='".$menu."'  name='dbMenu_".$x."' class='re_".$menuID."'>
-					<label >URL:</label><input type='text' value='LINK HERE'  name='dbMenuz_".$x."' class='' >
+					<label >URL:</label><input type='text' value='".$cs_Links."''  name='cs_Links_".$x."' class='' >
 
 					<div class='menu_delete re_".$menuID."' data-name='".$menuID."'>
 					<span class='fas fa-times-circle'></span>

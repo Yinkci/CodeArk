@@ -6,38 +6,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
    $(document).ready(function() {
-       // ON CLICK ADD MENU
-
-
-
-
-$("#sortable_nav").sortable({
-    placeholder: "ui-state-highlight",
-    helper: 'clone',
-    sort: function(e, ui) {
-        $(ui.placeholder).html(Number($("#sortable_nav > li:visible").index(ui.placeholder)) + 1);
-    },
-    update: function(event, ui) {
-        var $lis = $(this).children('li');
-        $lis.each(function() {
-            var $li = $(this);
-            var newVal = $(this).index() + 1;
-            $(this).children('.sortable-number').attr('value', newVal);
-            $(this).children('#item_display_order').attr('value', newVal);
-        });
-    }
-});
-$("#sortable_nav").disableSelection();
-
-
-
-$('.draggable_').sortable({
-    // stop: function(event, ui){
-    //     $(".dragmenux").each(function(i, el){
-    //            $(el).attr('data-id',$(el).index()+1);
-    //     });
-    // }
-});
     $("#my-menu").mmenu({
         "extensions": [
         // "fx-menu-zoom",
@@ -80,14 +48,6 @@ $('.draggable_').sortable({
 
     });
 
-// ON CLICK ADD MENU
-//   $(document).on('click','.addMenu_btn',function(){
-//     var input = $('#counter');
-//     input.text(Number(input.text())+1);
-//     input.val(Number(input.val())+1);
-//     myFunction();
-
-// });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // ADD MENU
@@ -156,26 +116,9 @@ $(document).ready(function(){
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-// DROPDOWN FOR ADDING MENU
+// DROPDOWN TOGGLE FOR ADDING MENU
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-// $(document).on('click','.dropdown-cus',function(){
-//  $(".dropdown-cus input").fadeIn().css("display","block").slow();
-// });
-// var xtoggle = 1;
-// var z = parseInt($(".addMenu_input  .dropdown-cus:last-of-type input:last-child").val());
-// alert(z);
-// var xc = 1;
-//     while(xc <= 11){
-//         var a = '.slidx'+xc;
-//         var b = '.dropdown-cus #mfields'+xc;
-
-//         $(document).on('click',a,function(){
-//             $(b).slideToggle( 'slow', function() {});
-//         });
-//         xc++;
-//     }
 
 $(document).ready(function(){     
     $(document).on('click','.slidx',function(){
@@ -186,24 +129,30 @@ $(document).ready(function(){
     });
 
 });
-// while (i < 10) {
-//     text += "The number is " + i;
-//     i++;
-// }
 
-// alert(ctr);
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// DRAG AND SORT MENU
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
-  // $(".dropdown-cus #mfields11").slideToggle( "slow", function() {});
-
-
-// jQuery.curCSS = function(element, prop, val) {
-//     return jQuery(element).css(prop, val);
-// };
-
-
-
-
-
+$(document).ready(function(){  
+    $("#sortable_nav").sortable({
+        placeholder: "ui-state-highlight",
+        helper: 'clone',
+        sort: function(e, ui) {
+            $(ui.placeholder).html(Number($("#sortable_nav > li:visible").index(ui.placeholder)) + 1);
+        },
+        update: function(event, ui) {
+            var $lis = $(this).children('li');
+            $lis.each(function() {
+                var $li = $(this);
+                var newVal = $(this).index() + 1;
+                $(this).children('.sortable-number').attr('value', newVal);
+                $(this).children('#item_display_order').attr('value', newVal);
+            });
+        }
+    });
+    $("#sortable_nav").disableSelection();
+});
 
 // ON CLICK ADD MENU
 //   $(document).on('click','.addMenu_btn',function(){
@@ -219,14 +168,4 @@ $(document).ready(function(){
 
 })(jQuery);
 
-
-   // jQuery.browser = {};
-   //  (function () {
-   //      jQuery.browser.msie = false;
-   //      jQuery.browser.version = 0;
-   //      if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
-   //          jQuery.browser.msie = true;
-   //          jQuery.browser.version = RegExp.$1;
-   //      }
-   //  })();
 

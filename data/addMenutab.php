@@ -17,7 +17,7 @@ $order_ = $_POST['order_'];
 	<div  class='mfields hidden h-label'>
 		<hr>
 		<label >NAME:</label><input type='text' value='<?php echo $ads; ?>'  name='dbMenu_<?php echo $ads; ?>'>
-		<label >URL:</label><input type='text' value='LINK' name='LINK' >
+		<label >URL:</label><input type='text' value='LINK' name='cs_Links_<?php echo $ads; ?>' >
 
 		<div class='menu_delete re_".$menuID."' data-name='".$menuID."'>
 			<span class='fas fa-times-circle'></span>
