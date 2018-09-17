@@ -6,8 +6,8 @@
 		<ul class="">
 			<li><a href="#"><i class="fas fa-sticky-note"></i> N Website Corp</a></li>
 			<li><a href="menu"><i class="fas fa-sticky-note"></i> Menu</a></li>
+			<li><a href="#"><i class="fas fa-sticky-note"></i> Pages</a></li>
 			<li><a href="#"><i class="fas fa-sticky-note"></i> Theme Settings</a></li>
-			<li><a href="#"><i class="fas fa-sticky-note"></i> Logout</a></li>
 		</ul>
     </nav>
 </div>
@@ -40,8 +40,8 @@
 			<ul class="menu-sen">
 				<li><a href="#"><i class="fas fa-sticky-note"></i> N Website Corp</a></li>
 				<li><a href="menu"><i class="fas fa-sticky-note"></i> Menu</a></li>
+				<li><a href="#"><i class="fas fa-sticky-note"></i> Page</a></li>
 				<li><a href="#"><i class="fas fa-sticky-note"></i> Theme Settings</a></li>
-				<li><a href="#"><i class="fas fa-sticky-note"></i> Logout</a></li>
 			</ul>
 		</div>
 	</div>

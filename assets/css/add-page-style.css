@@ -1,0 +1,20 @@
+.add-page_ {
+    margin: 10px;
+}
+.controlers {
+    margin: 20px 0px;
+}
+span.title-link label {
+    width: 90px;
+    text-transform: uppercase;
+}
+input.page-title_ {
+    width: 370px;
+}
+input.page-link_ {
+    border-style: solid;
+    border-color: #bbbbbb;
+    border-width: 1px;
+    background-color: #eaeaea;
+    margin-left: 2px;
+}

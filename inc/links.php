@@ -7,9 +7,8 @@
 <script src="assets/js/script.js"></script>
 <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
 <script src="assets/js/dashboard-script.js"></script>
-
+<!-- JQUERY UI -->
 <script src="assets/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
-
 
 <!-- CS STYLE -->
 <link rel="stylesheet" type="text/css" href="assets/css/default-style.css">
@@ -17,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/dashboard-style.css">
 <link rel="stylesheet" type="text/css" href="assets/css/cs-menu-style.css">
 <link rel="stylesheet" type="text/css" href="assets/css/cs-addmenu-style.css">
-
+<link rel="stylesheet" type="text/css" href="assets/css/add-page-style.css">
 <!-- FONTAWESOME -->
 <link rel="stylesheet" type="text/css" href="vendors/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
 <!-- BOOSTRAP 4 -->

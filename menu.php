@@ -15,25 +15,6 @@
 	<div class="col-md-10">
 		<div class="rightMenu">
 
-<!-- 
-<div id='sortable_nav' class='sortable ui-sortable'>
-    <li class='ui-state-default' style=''>
-    </span>
-        Apple
-        <input class='ui-state-default sortable-number' value='1'>
-          
-       
-    </li>
-    <li class='ui-state-default'>
-        Mengo
-            <input class='ui-state-default sortable-number' value='2'>
-    </li>
-
-
-</div>
- -->
-
-
 
 
 		<form action="data/cs_menu" method="POST" id="save_menuID">

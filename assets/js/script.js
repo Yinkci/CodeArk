@@ -154,6 +154,17 @@ $(document).ready(function(){
     $("#sortable_nav").disableSelection();
 });
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// ADD PAGE
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(document).ready(function(){
+        $(document).on('click','.publish_page_btn',function(){
+        alert("re");
+        $('#publishpage_id').submit();
+        });
+});
+
 // ON CLICK ADD MENU
 //   $(document).on('click','.addMenu_btn',function(){
 //     var input = $('#counter');
