@@ -15,7 +15,8 @@
 	<div class="col-md-10">
 		<div class="rightMenu">
 
-
+<?php $my_site = $_GET['page']; 
+echo "PAGE: ".$my_site; ?>
 
 		<form action="data/cs_menu" method="POST" id="save_menuID">
 			<?php call_menu(); ?>
