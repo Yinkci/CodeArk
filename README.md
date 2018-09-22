@@ -1,6 +1,8 @@
 # CodeArk
 My personal Content Management System
+
 Progress: 8%
+
 The purpose of this project is to enhance my development skills.
 
 As of now, this CMS can:
