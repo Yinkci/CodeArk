@@ -18,3 +18,10 @@ input.page-link_ {
     background-color: #eaeaea;
     margin-left: 2px;
 }
+.mainpage_ li a {
+    padding: 10px;
+    display: inline-block;
+}
+.mainpage_ li{
+    list-style-type: none;
+}

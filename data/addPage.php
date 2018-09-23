@@ -13,12 +13,13 @@ require (__ROOTs__."/header.php");
 	}
 
 $page_title_ = $_POST["page_title_"];
+$template_file = $_POST["template_file"];
 $page_link_ = $_POST["page_link_"];
 echo $page_title_;
 echo $page_link_;
 
-
-$query = mysqli_query($con,"INSERT INTO cs_Page(PageID,PageName,PageLink)VALUES('$PageID','$page_title_','$page_link_')");
+echo "string".$template_file;
+$query = mysqli_query($con,"INSERT INTO cs_Page(PageID,PageName,PageLink,TemplateFIle)VALUES('$PageID','$page_title_','$page_link_','$template_file')");
 
 mysqli_close($con);
 // header("location:".home_url()."/menu");

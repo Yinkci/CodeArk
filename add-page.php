@@ -15,10 +15,21 @@
 				<?php echo home_url()."/"?><input type="text" name="page_link_" value="" class="page_link_">
 				<input type="submit" name="publish_page" class="publishpage_" >
 			</span>
+			<select name="template_file">
+				<option name="">Default Template</option>
+			<?php 
+			foreach (new DirectoryIterator('./data') as $file) {
+			if ($file->isFile()) {
+			$files__ = str_replace(".php", "", $file->getFilename());
+			echo "<option value='".$files__."'>".$files__. "</option>";
+			}
+			}
+			?>
+			</select>
 		</form>
 
 	</div>
-
+	
 	<!-- end of your code -->
 </div>
 </div><!-- END DASHBOARD-HEADER ROW  -->
