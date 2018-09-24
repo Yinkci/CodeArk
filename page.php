@@ -9,7 +9,7 @@ require ("dashboard-header.php");
 
 <div class="row">
 	<div class="mainpage_">
-		<ul>
+	
 <?php 
 
 
@@ -20,13 +20,14 @@ $ses_sqli = mysqli_query($con,"SELECT * FROM cs_page ORDER BY PageID");
 	while($row = mysqli_fetch_array($ses_sqli)){
 		$PageName = $row['PageName'];
 		$PageLink = $row['PageLink'];
+		$PageID = $row['PageID'];
 
-		echo "<li><a href='".home_url()."/".$PageLink."'>".home_url()."/".$PageName."</a></li>";
+		echo "<form metho='POST' action='data/pageDelete.php' class='form_page'><div class='pagelist_'><input type='text'  name='pageID_' value='".$PageID."' ><div class='pagename_'>".$PageName."</div><div class='pagelink_'><a href='".home_url()."/".$PageLink."'>".home_url()."/".$PageLink."</a></div><div  data-name='".$PageID."' class='deletepage_'><i class='fas fa-times-circle'></i>DELETE</div></div></form>";
 	}
 
 
 ?>
-</ul>
+
 </div>
 </div>
 

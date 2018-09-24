@@ -114,6 +114,32 @@ $(document).ready(function(){
 
 });
 
+$(document).ready(function(){
+     $('.menu_delete').click(function(e){   
+        var x = $(this).data('name');   
+        var y = ".re_"+x;
+        $(y).remove();
+              e.preventDefault();
+              $.ajax({
+                type: 'POST',
+                url: 'data/menuDelete',
+                data: {
+                  x : x,
+                },
+                success: function (result) {
+                    // var ctr_ = parseInt($(".addMenu_input input:last-child").val());
+                    // $(".addMenu_ctr").val(ctr_-1);
+                    location.reload();
+                          var ctr_ = parseInt($(".addMenu_input input:last-child").val());
+                    $(".addMenu_ctr").val(ctr_-1);
+                },
+                error: function () {
+                    $(".rightMenu").html("Something Went Wrong");
+                }
+            });
+    });
+
+});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // DROPDOWN TOGGLE FOR ADDING MENU
@@ -160,10 +186,15 @@ $(document).ready(function(){
 
 $(document).ready(function(){
         $(document).on('click','.publish_page_btn',function(){
-        alert("re");
         $('#publishpage_id').submit();
         });
+        $(document).on('click','.form_page',function(){
+        // alert("reset");
+        $('.form_page').submit();
+        });
+
 });
+
 
 // ON CLICK ADD MENU
 //   $(document).on('click','.addMenu_btn',function(){

@@ -25,3 +25,23 @@ input.page-link_ {
 .mainpage_ li{
     list-style-type: none;
 }
+.pagelist_ {
+    outline: 1px solid #a4a4a4;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    position: relative;
+}
+.mainpage_ {
+    width: 100%;
+    display: block;
+}
+.deletepage_ {
+    text-align: right;
+    position: absolute;
+    right: 34px;
+    top: 0;
+}
+.deletepage_ i {
+    margin-right: 5px;
+}
