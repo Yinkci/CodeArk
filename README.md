@@ -1,7 +1,7 @@
 # CodeArk
 My personal Content Management System
 
-Progress: 8%
+Progress: 15%
 
 The purpose of this project is to enhance my development skills.
 
