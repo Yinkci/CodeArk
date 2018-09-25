@@ -27,4 +27,7 @@ mysqli_close($con);
 
 
 
-  
+  ?>
+
+
+</style>
