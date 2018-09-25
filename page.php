@@ -22,7 +22,17 @@ $ses_sqli = mysqli_query($con,"SELECT * FROM cs_page ORDER BY PageID");
 		$PageLink = $row['PageLink'];
 		$PageID = $row['PageID'];
 
-		echo "<form metho='POST' action='data/pageDelete.php' class='form_page'><div class='pagelist_'><input type='text'  name='pageID_' value='".$PageID."' ><div class='pagename_'>".$PageName."</div><div class='pagelink_'><a href='".home_url()."/".$PageLink."'>".home_url()."/".$PageLink."</a></div><div  data-name='".$PageID."' class='deletepage_'><i class='fas fa-times-circle'></i>DELETE</div></div></form>";
+		echo "<form metho='POST' action='' class='form_page".$PageID."'>
+				<div class='pagelist_'>
+				<div class='pagename_'>".$PageName."</div>
+				<div class='pagelink_'>
+				<a href='".home_url()."/".$PageLink."'>".home_url()."/".$PageLink."</a>
+				</div>
+				<div  data-name='".$PageID."' class='deletepage_'>
+				<i class='fas fa-times-circle'></i>DELETE
+				</div>
+				</div>
+			</form>";
 	}
 
 

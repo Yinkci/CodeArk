@@ -115,27 +115,25 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-     $('.menu_delete').click(function(e){   
-        var x = $(this).data('name');   
-        var y = ".re_"+x;
-        $(y).remove();
+     $('.deletepage_').click(function(e){ 
               e.preventDefault();
+              var x = $(this).data('name');  
+              var y = '.form_page'+x;
               $.ajax({
                 type: 'POST',
-                url: 'data/menuDelete',
+                url: 'data/pageDelete',
                 data: {
                   x : x,
                 },
-                success: function (result) {
-                    // var ctr_ = parseInt($(".addMenu_input input:last-child").val());
-                    // $(".addMenu_ctr").val(ctr_-1);
-                    location.reload();
-                          var ctr_ = parseInt($(".addMenu_input input:last-child").val());
-                    $(".addMenu_ctr").val(ctr_-1);
+               success: function (result) {
+                $(y).remove();
+                // $(".mainpage_").html("SUCCESS");
+                    
                 },
                 error: function () {
-                    $(".rightMenu").html("Something Went Wrong");
+                    $(".mainpage_").html("Something Went Wrong");
                 }
+          
             });
     });
 
@@ -190,7 +188,7 @@ $(document).ready(function(){
         });
         $(document).on('click','.form_page',function(){
         // alert("reset");
-        $('.form_page').submit();
+        // $('.form_page').submit();
         });
 
 });

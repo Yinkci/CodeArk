@@ -14,7 +14,7 @@ require (__ROOTs__."/header.php");
 
 $page_title_ = $_POST["page_title_"];
 $template_file = $_POST["template_file"];
-$page_link_ = $_POST["page_link_"];
+$page_link_ = strtolower(str_replace(" ", "-",$_POST["page_link_"]));
 echo $page_title_;
 echo $page_link_;
 

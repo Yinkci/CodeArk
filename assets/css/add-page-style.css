@@ -45,3 +45,6 @@ input.page-link_ {
 .deletepage_ i {
     margin-right: 5px;
 }
+.page_link_{
+    text-transform: lowercase;
+}
