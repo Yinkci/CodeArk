@@ -72,3 +72,8 @@ select.template_file {
     color: red !important;
     margin-top: 20px;
 }
+.page_link_ {
+    text-transform: lowercase;
+    border-style: hidden;
+    background-color: #e8e8e8;
+}
