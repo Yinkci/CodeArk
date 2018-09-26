@@ -14,12 +14,15 @@ require (__ROOTs__."/header.php");
 
 $page_title_ = $_POST["page_title_"];
 $template_file = $_POST["template_file"];
+$htmlcontent = $_POST["htmlcontent"];
+
 $page_link_ = strtolower(str_replace(" ", "-",$_POST["page_link_"]));
 echo $page_title_;
 echo $page_link_;
+echo $htmlcontent;
 
 echo "string".$template_file;
-$query = mysqli_query($con,"INSERT INTO cs_Page(PageID,PageName,PageLink,TemplateFIle)VALUES('$PageID','$page_title_','$page_link_','$template_file')");
+$query = mysqli_query($con,"INSERT INTO cs_Page(PageID,PageName,PageLink,TemplateFIle,htmlcontent)VALUES('$PageID','$page_title_','$page_link_','$template_file','$htmlcontent')");
 
 mysqli_close($con);
 // header("location:".home_url()."/menu");
@@ -30,4 +33,3 @@ mysqli_close($con);
   ?>
 
 
-</style>

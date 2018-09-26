@@ -7,7 +7,6 @@
 <script src="assets/js/script.js"></script>
 <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
 <script src="assets/js/dashboard-script.js"></script>
-<script src="assets/js/htmleditor-script.js"></script>
 
 <!-- JQUERY UI -->
 <script src="assets/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
@@ -24,8 +23,9 @@
 <!-- BOOSTRAP 4 -->
 <link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.min.css">
 <script  src="vendors/bootstrap/js/bootstrap.min.js"></script>
-<!-- <script  src="vendors/tinymce/jquery.tinymce.min.js"></script> -->
+<!--  TINYMCE -->
 <script  src="vendors/tinymce/tinymce.min.js"></script>
+<script src="assets/js/htmleditor-script.js"></script>
 
 
 
@@ -37,4 +37,3 @@
 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script> -->
 <!-- FUNCTIONS -->
 <?php include(__ROOT__."/functions/cs-functions.php");?>
-<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>

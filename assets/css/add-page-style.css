@@ -48,3 +48,27 @@ input.page-link_ {
 .page_link_{
     text-transform: lowercase;
 }
+div#mceu_22 {
+    width: 98% !important;
+}
+.controlers a {
+    display: block;
+    margin: 10px;
+    text-align: center;
+}
+.dashboard-container {
+    width: 100%;
+}
+input.publishpage_ {
+    display: none;
+}
+select.template_file {
+    text-align: right;
+    float: right;
+    padding: 5px;
+}
+
+.red{
+    color: red !important;
+    margin-top: 20px;
+}

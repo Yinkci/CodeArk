@@ -14,6 +14,8 @@ $query = mysqli_query($con,"SELECT * FROM cs_page where PageLink = '$PageName'  
 	while($rowx = mysqli_fetch_array($query)){
 			$namae = $rowx['PageLink'];
 			$content = $rowx['TemplateFile'];
+			$htmlcontent = $rowx['htmlcontent'];
+
 
 	}
 
@@ -22,6 +24,7 @@ $query = mysqli_query($con,"SELECT * FROM cs_page where PageLink = '$PageName'  
 if ($row==1) {
 	echo $namae;
 	echo $content;
+	echo $htmlcontent;
 
 }
 else{
