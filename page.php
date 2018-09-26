@@ -9,7 +9,7 @@ require ("dashboard-header.php");
 
 <div class="row">
 	<div class="mainpage_">
-	
+	<a href="add-page" class="secprimary_btn">ADD NEW PAGE</a>
 <?php 
 
 
@@ -26,7 +26,7 @@ $ses_sqli = mysqli_query($con,"SELECT * FROM cs_page ORDER BY PageID");
 				<div class='pagelist_'>
 				<div class='pagename_'>".$PageName."</div>
 				<div class='pagelink_'>
-				<a href='".home_url()."/".$PageLink."'>".home_url()."/".$PageLink."</a>
+				<a target='_blank' href='".home_url()."/".$PageLink."'>".home_url()."/".$PageLink."</a>
 				</div>
 				<div  data-name='".$PageID."' class='deletepage_'>
 				<i class='fas fa-times-circle'></i>DELETE

@@ -6,7 +6,7 @@
 		<ul class="">
 			<li><a href="#"><i class="fas fa-sticky-note"></i> N Website Corp</a></li>
 			<li><a href="menu"><i class="fas fa-sticky-note"></i> Menu</a></li>
-			<li><a href="#"><i class="fas fa-sticky-note"></i> Pages</a></li>
+			<li><a href="http://localhost:4433/CodeArk/page"><i class="fas fa-sticky-note"></i> Pages</a></li>
 			<li><a href="#"><i class="fas fa-sticky-note"></i> Theme Settings</a></li>
 		</ul>
     </nav>
@@ -40,7 +40,7 @@
 			<ul class="menu-sen">
 				<li><a href="#"><i class="fas fa-sticky-note"></i> N Website Corp</a></li>
 				<li><a href="menu"><i class="fas fa-sticky-note"></i> Menu</a></li>
-				<li><a href="#"><i class="fas fa-sticky-note"></i> Page</a></li>
+				<li><a href="http://localhost:4433/CodeArk/page"><i class="fas fa-sticky-note"></i> Page</a></li>
 				<li><a href="#"><i class="fas fa-sticky-note"></i> Theme Settings</a></li>
 			</ul>
 		</div>

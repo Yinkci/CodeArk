@@ -22,9 +22,15 @@ $query = mysqli_query($con,"SELECT * FROM cs_page where PageLink = '$PageName'  
 
 // Check page if exist
 if ($row==1) {
-	echo $namae;
-	echo $content;
+	if($content == "Default Template"):
 	echo $htmlcontent;
+	
+	else:
+	$temp = "./templates/".$content.".php";
+	include($temp);
+	endif;
+
+
 
 }
 else{

@@ -20,7 +20,7 @@
 				<select name="template_file" class="template_file">
 					<option name="">Default Template</option>
 				<?php 
-				foreach (new DirectoryIterator('./data') as $file) {
+				foreach (new DirectoryIterator('./templates') as $file) {
 				if ($file->isFile()) {
 				$files__ = str_replace(".php", "", $file->getFilename());
 				echo "<option value='".$files__."'>".$files__. "</option>";
