@@ -114,6 +114,10 @@ $(document).ready(function(){
 
 });
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// DELETE PAGE
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
 $(document).ready(function(){
      $('.deletepage_').click(function(e){ 
               e.preventDefault();
@@ -186,14 +190,18 @@ $(document).ready(function(){
         $(document).on('click','.publish_page_btn',function(){
         $('#publishpage_id').submit();
         });
-        $(document).on('click','.form_page',function(){
-        // alert("reset");
-        // $('.form_page').submit();
-        });
 
 });
+$(document).ready(function(){
+    var non_selected = $("select.template_file option:selected").val();
+         $(".template_file_field").val(non_selected);
 
-
+        // $(".template_file_field").val(selectedtemplate);
+        $("select.template_file").change(function(){
+        var selectedtemplate = $("select.template_file option:selected").val();
+         $(".template_file_field").val(selectedtemplate);
+        });
+});
 // ON CLICK ADD MENU
 //   $(document).on('click','.addMenu_btn',function(){
 //     var input = $('#counter');

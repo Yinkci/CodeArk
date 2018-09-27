@@ -4,10 +4,7 @@
     position: absolute;
     margin: -3px 10px 5px 0px;
 }
-.leftMenu_ {
-    height: 100vh;
-    border-right: 1px ridge #d0d0d0;
-}
+
 .leftMenu_ li {
 	list-style-type: none;
     border-bottom-style: ridge;

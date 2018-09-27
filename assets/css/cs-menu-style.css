@@ -6,7 +6,7 @@
 }
 
 nav#cs-menu{
-background-color: #212529;
+background-color: #034d80;
 }
 #cs-menu .mm-navbar.mm-navbar-size-1.mm-hasbtns {
     display: none;
@@ -18,7 +18,6 @@ background-color: #212529;
 }
 
 .cs-logout {
-    text-align: right;
     padding: 7px;
 }
 .cs-logout a {
@@ -27,6 +26,8 @@ background-color: #212529;
     margin: 0px 20px;
     cursor: pointer;
     color: white;
+    float: right;
+    margin-top: 5px;
 }
 .cs-logout a:hover {
     text-decoration: none;
@@ -45,7 +46,10 @@ a.cs-menuicon  i:hover {
 .cs-menuicon i{
   padding: 13px;
 }
-
+.ark-logo {
+    margin: 0px 10px;
+    width: 100px;
+}
 /*MEDIA QUERIES*/
 /* col-lg */
 @media (max-width:1200px){

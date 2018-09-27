@@ -47,7 +47,8 @@ div#mceu_22 {
 }
 .controlers a {
     display: block;
-    margin: 10px;
+    margin: 10px 0px;
+    font-size: 0.8em;
     text-align: center;
 }
 
@@ -58,21 +59,39 @@ select.template_file {
     text-align: right;
     float: right;
     padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    width: 100%;
 }
 
-.red{
-    color: red !important;
-    margin-top: 20px;
-}
 .page_link_ {
     text-transform: lowercase;
     border-style: hidden;
-    background-color: #e8e8e8;
+    background-color: transparent;
+    color: #0987dc;
+    width: 50%;
 }
 input.page_title_ {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-bottom: 1px solid blue;
-    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #0987dc;
+    padding: 5px;
+}
+.title-link label {
+    margin: 10px 0px;
+}
+.link_url {
+    display: inline;
+    color: #0987dc;
+}
+.choose-tem {
+    font-size: 0.9em;
+    text-transform: capitalize;
+    margin: 5px 0px;
+    border: 1px solid #2276d2;
+    display: inline-block;
+    padding: 25px 6px;
+    width: 100%;
+}
+.temp-title_ {
+    margin: 5px 0px;
 }

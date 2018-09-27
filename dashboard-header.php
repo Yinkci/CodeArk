@@ -2,14 +2,15 @@
 <?php require ("header.php"); ?>
 <!-- MOBILE MENU -->
 <div id="my-wrapper-cs-menu" >       
-    <nav id="cs-menu" class="cs-menu">
-		<ul class="">
-			<li><a href="#"><i class="fas fa-sticky-note"></i> N Website Corp</a></li>
-			<li><a href="menu"><i class="fas fa-sticky-note"></i> Menu</a></li>
-			<li><a href="http://localhost:4433/CodeArk/page"><i class="fas fa-sticky-note"></i> Pages</a></li>
-			<li><a href="#"><i class="fas fa-sticky-note"></i> Theme Settings</a></li>
+	<nav id="cs-menu" class="cs-menu">
+		<ul class="menu-sen">
+			<li><a href="#"><i class="fas fa-code"></i> Dashboard</a></li>
+			<li><a href="menu"><i class="fas fa-th-list"></i> Menu</a></li>
+			<li><a href="http://localhost:8888/CodeArk/page"><i class="fas fa-sticky-note"></i> Page</a></li>
+			<li><a href="#"><i class="fas fa-cog"></i> Theme Settings</a></li>
+			<li><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li>
 		</ul>
-    </nav>
+	</nav>
 </div>
 <!-- DESKTOP MENU -->
 <div class="d-flex">
@@ -27,6 +28,7 @@
 			<div class="col-9 col-md-6 col-xl-12 cs-logout">
 				<div class="d-table">
 					<div class="d-cell">
+						<img src="assets/img/codeark.png" class="d-none  d-xl-inline-block ark-logo">
 						<a href="#"><i class="fas fa-user-circle"></i> Logout</a>
 					</div>
 				</div>
@@ -38,10 +40,11 @@
 	<div class="menu col-md-2 col-md-2 d-none col-xl-2 d-xl-block pd-left10">
 		<div class="header-sen ">
 			<ul class="menu-sen">
-				<li><a href="#"><i class="fas fa-sticky-note"></i> N Website Corp</a></li>
-				<li><a href="menu"><i class="fas fa-sticky-note"></i> Menu</a></li>
-				<li><a href="http://localhost:4433/CodeArk/page"><i class="fas fa-sticky-note"></i> Page</a></li>
-				<li><a href="#"><i class="fas fa-sticky-note"></i> Theme Settings</a></li>
+				<li><a href="#"><i class="fas fa-code"></i> Dashboard</a></li>
+				<li><a href="menu"><i class="fas fa-th-list"></i> Menu</a></li>
+				<li><a href="http://localhost:8888/CodeArk/page"><i class="fas fa-sticky-note"></i> Page</a></li>
+				<li><a href="#"><i class="fas fa-cog"></i> Theme Settings</a></li>
+				<li><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li>
 			</ul>
 		</div>
 	</div>
