@@ -13,7 +13,7 @@ As of now, this CMS can:
 
 Sample Screenshots:
 
-<img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/SS1.png">
-<img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/SS2.png">
-<img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/SS3.png">
+<img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/CC1.png">
+<img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/CC2.png">
+<img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/CC3.png">
 
