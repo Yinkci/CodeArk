@@ -9,4 +9,11 @@ As of now, this CMS can:
 * Create, Add and Delete dynamic pages in dahsboard.
 * Can use Text Editor TinyMce in Add Page Dashboard.
 * With Template option in 'Add Page' Dashboard so users can create and choose a template for the page.
-<img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/githubcover.jpg">
+
+
+Sample Screenshots:
+
+<img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/SS1.png">
+<img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/SS2.png">
+<img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/SS3.png">
+
