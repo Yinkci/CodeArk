@@ -11,7 +11,7 @@ As of now, this CMS can:
 * With Template option in 'Add Page' Dashboard so users can create and choose a template for the page.
 
 
-# Sample Screenshots:
+## Sample Screenshots:
 
 <img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/CC1.png">
 <img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/CC2.png">
