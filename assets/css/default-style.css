@@ -125,12 +125,10 @@ body{
 padding-left: 0px !important;
 }
 .primary_btn {
-  background-color: #3b7cb6;
+    background-color: #0794f3;
     border-color: #78788c #78788c #78788c;
-    box-shadow: 0 1px 0 #78788c;
+    box-shadow: 1px 2px 0px 0px #78788c;
     color: #fff !important;
-    text-decoration: none;
-    text-shadow: 0 -1px 1px #3b7cb6, 1px 0 1px #3b7cb6, 0 1px 1px #3b7cb6, -1px 0 1px #3b7cb6;
     cursor: pointer;
 }
 .secprimary_btn {

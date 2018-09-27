@@ -10,7 +10,7 @@
     border-bottom-style: ridge;
     border-width: 1px;
     border-color: #d0d0d0;
-    padding: 10px;
+    padding: 15px;
     position: relative;
 }
 
@@ -22,11 +22,18 @@
 .dropdown-cus{
     width: 300px;
     height: auto;
-    background-color: #e4e4e4;
+    /*background-color: rgb(40, 124, 181);*/
+    background-color: rgb(220, 220, 220);
+    color: black;
     cursor: pointer;
     padding: 5px 20px;
     position: relative;
-    margin: 5px;
+    margin: 5px 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #086baf;
+    border-radius: 5px;
+
 }
 .dropdown-cus i{
     right: 0;
@@ -73,4 +80,14 @@
 
 div#sortable_nav li {
     list-style-type: none;
+}
+.menu-title {
+    margin: 30px 0px;
+}
+.menu-title input{
+    background-color: transparent;
+    border: none;
+}
+input#save_menu {
+    margin: 10px 0px;
 }
