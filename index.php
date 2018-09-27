@@ -34,7 +34,8 @@ if ($row==1) {
 
 }
 else{
-	echo "404 not Found";
+	$PAGE_NOT_FOUND = "./404/404.php";
+	include($PAGE_NOT_FOUND);
 
 }
 	mysqli_close($con);

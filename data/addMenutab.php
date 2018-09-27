@@ -4,9 +4,6 @@ $ads = $_POST['ads'];
 $order_ = $_POST['order_']; 
 
 ?>
-<br>
-<!-- <input type='text' name='dbMenu_<?php echo $ads; ?>'>
-<input type='hidden' value='<?php echo $ads; ?>' class='input-text' name='IDMenu_<?php echo $ads; ?>'> -->
 
 <li class='ui-state-default' style=''>
  <input type='hidden' name='order_<?php echo $order_; ?>' class='ui-state-default sortable-number' value='<?php echo $order_; ?>'>
