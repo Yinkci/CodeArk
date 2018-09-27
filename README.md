@@ -17,3 +17,5 @@ Sample Screenshots:
 <img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/CC2.png">
 <img src="https://github.com/Yinkci/CodeArk/blob/master/assets/img/CC3.png">
 
+# How to install
+Code Ark is not yet ready for installations. Please wait the official first version release before downloading. Thank you.
