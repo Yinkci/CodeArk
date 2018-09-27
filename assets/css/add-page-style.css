@@ -25,13 +25,7 @@ input.page-link_ {
 .mainpage_ li{
     list-style-type: none;
 }
-.pagelist_ {
-    outline: 1px solid #a4a4a4;
-    margin: 5px;
-    padding: 5px;
-    width: 100%;
-    position: relative;
-}
+
 .mainpage_ {
     width: 100%;
     display: block;
@@ -56,9 +50,7 @@ div#mceu_22 {
     margin: 10px;
     text-align: center;
 }
-.dashboard-container {
-    width: 100%;
-}
+
 input.publishpage_ {
     display: none;
 }
@@ -76,4 +68,11 @@ select.template_file {
     text-transform: lowercase;
     border-style: hidden;
     background-color: #e8e8e8;
+}
+input.page_title_ {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid blue;
+    background-color: transparent;
 }

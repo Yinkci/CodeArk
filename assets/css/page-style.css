@@ -1,0 +1,28 @@
+.controler-top {
+    margin: 10px 0px 20px 0px;
+}
+.pagelist_ {
+    /*outline: 1px solid #a4a4a4;*/
+    margin: 5px 0px;
+    padding: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.pagelink_ a:hover{
+    text-decoration: none;
+    color: #0794f3;
+}
+.pagelink_ a {
+    color: #3b7cb6;
+}
+.pagename_ {
+    text-transform: uppercase;
+}
+.deletepage_:hover {
+    color: #c30b1c;
+    cursor: pointer;
+}
+.deletepage_ {
+    color: red;
+}
