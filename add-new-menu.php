@@ -6,7 +6,7 @@
 		<div class="col-md-3 pleft-0">
 			<div class="leftMenu_">
 				<form method="POST" class="eds"  id="callValue">
-					<li> ADD NEW MENU <a href="add-new-menu" class="addnewMenu_btn primary_btn" type="button" >+</a></li>
+					<li> ADD NEW MENU <a class="addMenu_btn primary_btn" type="button" >+</a></li>
 					<li> ADD LINK <a class="addMenu_btn primary_btn" type="button" >+</a></li>
 				</form>
 
@@ -15,7 +15,7 @@
 		<div class="col-md-9">
 			<div class="rightMenu">
 				<form action="data/cs_menu" method="POST" id="save_menuID">
-					<div class="menu-title">Menu Title: <input type="text" name="menu-title" value="<?php menu_title(); ?>" placeholder="Edit Title here .."></div>
+					<div class="menu-title">Menu Title: <input type="text" name="menu-title" placeholder="Edit Title here .."></div>
 					<?php call_menu(); ?>
 					<input type="submit" name="save_menu"  id="save_menu" value="SAVE" class="secprimary_btn">
 				</form>
@@ -23,14 +23,6 @@
 		</div>	<!-- col 9 end -->
 	</div>
 	<?php
-	function menu_title(){
-		require("data/database.php");
-		$ses_sqli = mysqli_query($con,"SELECT * FROM cs_addmenu");
-		$row = mysqli_fetch_array($ses_sqli);
-			$menu_title = $row['menu_title'];
-			echo $menu_title;
-		
-	}
 	function call_menu() {
 		require("data/database.php");
 		$ses_sqli = mysqli_query($con,"SELECT * FROM cs_addmenu ORDER BY OrderID");

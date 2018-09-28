@@ -3,6 +3,10 @@
 $ads = $_POST['ads']; 
 $order_ = $_POST['order_']; 
 
+if ($ads == 'NaN' && $order_ == 'NaN' ) {
+	$ads = 1;
+	$order_ = 1;
+}
 ?>
 
 <li class='ui-state-default' style=''>

@@ -4,7 +4,12 @@
     position: absolute;
     margin: -3px 10px 5px 0px;
 }
-
+.addnewMenu_btn{
+    padding: 3px 14px;
+    right: 0px;
+    position: absolute;
+    margin: -3px 10px 5px 0px; 
+}
 .leftMenu_ li {
 	list-style-type: none;
     border-bottom-style: ridge;
