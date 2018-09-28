@@ -24,5 +24,26 @@
     cursor: pointer;
 }
 .deletepage_ {
+    text-align: right;
+    position: absolute;
+    right: 34px;
+    top: 0;
     color: red;
+}
+.deletepage_ i {
+    margin-right: 5px;
+}
+.edit_page {
+    text-align: right;
+    position: absolute;
+    right: 150px;
+    top: 0;
+    color: green;
+}
+.edit_page i {
+    margin-right: 5px;
+}
+.edit_page:hover {
+    color: #09b509;
+    cursor: pointer;
 }

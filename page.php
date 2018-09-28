@@ -31,6 +31,9 @@ require ("dashboard-header.php");
 				<div class='pagelink_'>
 				<a target='_blank' href='".home_url()."/".$PageLink."'>".home_url()."/".$PageLink."</a>
 				</div>
+				<div  data-edit='".$PageID."' class='edit_page'>
+				<i class='fas fa-edit'></i>EDIT
+				</div>
 				<div  data-name='".$PageID."' class='deletepage_'>
 				<i class='fas fa-times-circle'></i>DELETE
 				</div>

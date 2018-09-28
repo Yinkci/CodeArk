@@ -30,15 +30,7 @@ input.page-link_ {
     width: 100%;
     display: block;
 }
-.deletepage_ {
-    text-align: right;
-    position: absolute;
-    right: 34px;
-    top: 0;
-}
-.deletepage_ i {
-    margin-right: 5px;
-}
+
 .page_link_{
     text-transform: lowercase;
 }

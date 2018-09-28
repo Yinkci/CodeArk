@@ -1,9 +1,15 @@
-RewriteEngine On  
 RewriteEngine on 
 RewriteCond %{REQUEST_FILENAME} !-d 
 RewriteCond %{REQUEST_FILENAME}\.php -f 
 RewriteRule ^(.*)$ $1.php
 
+
+
 RewriteCond %{SCRIPT_FILENAME} !-d  
 RewriteCond %{SCRIPT_FILENAME} !-f
-RewriteRule ^([^/]+)/?$ ?page=$1 [L,QSA,NC]
+RewriteRule ^([^/]+)/?$ ?page=$1 [L]
+
+
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^(.*)$ ./edit-page?edit=$1 
