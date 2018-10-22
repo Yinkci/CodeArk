@@ -32,7 +32,7 @@
 			<div class="rightMenu">
 				<div class="controlers">
 				<a href="add-page" class="secprimary_btn">ADD NEW PAGE</a>
-				<a href="#" class="secprimary_btn publish_page_btn">PUBLISH PAGE</a>
+				<a href="javaScript:void(0)" class="secprimary_btn publish_page_btn">PUBLISH PAGE</a>
 				</div>
 				<div class="choose-tem">
 					<div class="temp-title_">Choose Template:</div>

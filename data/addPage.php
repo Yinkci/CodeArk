@@ -17,9 +17,9 @@ $template_file = $_POST["template_file_field"];
 $htmlcontent = $_POST["htmlcontent"];
 
 $page_link_ = strtolower(str_replace(" ", "-",$_POST["page_link_"]));
-echo $page_title_;
-echo $page_link_;
-echo $htmlcontent;
+// echo $page_title_;
+// echo $page_link_;
+// echo $htmlcontent;
 
 
 

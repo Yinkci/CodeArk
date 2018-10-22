@@ -1,6 +1,6 @@
 <?php define('__ROOT__', dirname(dirname(__FILE__)));  ?>
 <?php define( 'ABSPATH', dirname(dirname(__FILE__)) . '/' ); ?>
-  <base href="http://localhost:8888/CodeArk/">
+  <base href="http://localhost/CodeArk/">
 <!-- JQUERT 3.3.1 -->
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <!-- AJAX -->

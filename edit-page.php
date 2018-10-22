@@ -3,7 +3,7 @@
 <div class="col-md-12 col-lg-10 col-xl-10 dash-container">
 	<!-- your code here -->
 	<?php
-echo "btok".$_GET['edit'];
+echo "PAGE NAME IS:  ".$_GET['edit'];
 	?>
 	<div ng-app="plunker" >
 	<div class="row dashboard-container ">
