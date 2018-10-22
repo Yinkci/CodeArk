@@ -1,7 +1,7 @@
 # CodeArk
 Your personal Content Management System
 
-Progress: 15%
+Progress: 25%
 
 
 As of now, this CMS can:
