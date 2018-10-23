@@ -1,10 +1,36 @@
-<?php require ("dashboard-header.php"); ?>
+<?php require ("dashboard-header.php");
+require ("database.php"); ?>
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <div class="col-md-12 col-lg-10 col-xl-10 dash-container">
 	<!-- your code here -->
 	<?php
-echo "PAGE NAME IS:  ".$_GET['edit'];
+
+
+
+$PageName = $_GET['edit']; 
+$query = mysqli_query($con,"SELECT * FROM cs_page where PageLink = '$PageName'  ");
+		$row = mysqli_num_rows($query);
+
+
+	while($rowx = mysqli_fetch_array($query)){
+			$PageLink = $rowx['PageLink'];
+			$PageName = $rowx['PageName'];
+
+			$content = $rowx['TemplateFile'];
+			$htmlcontent = $rowx['htmlcontent'];
+
+
+	}
+
+
+
+
+
+
 	?>
+
+
 	<div ng-app="plunker" >
 	<div class="row dashboard-container ">
 		<div class="col-md-10 p-0">
@@ -13,9 +39,9 @@ echo "PAGE NAME IS:  ".$_GET['edit'];
 				<form method="POST" id="publishpage_id" action="data/addPage">
 				<div class="title-link">
 					<label>ADD TITLEs:</label>
-					<input type="text"  ng-model="page_title_" name="page_title_" value="" class="page_title_"><br>
+					<input type="text" name="page_title_" value="<?php echo $PageName; ?>" class="page_title_"><br>
 					<label>LINK:</label>
-					<div class="link_url"><?php echo home_url()."/"?><input type="text" name="page_link_" value="{{page_title_|replace: ' ':'-'}}" class="page_link_"></div>
+					<div class="link_url"><?php echo home_url()."/"?><input type="text" name="page_link_" value="<?php echo $PageLink; ?>" class="page_link_"></div>
 					<input type="submit" name="publish_page" class="publishpage_" >
 				</div>
 				<input type="hidden" name="htmlcontent" value="" class="html_data">
@@ -24,7 +50,7 @@ echo "PAGE NAME IS:  ".$_GET['edit'];
 				</div>
 				<div class="htmleditor">
 				<form method="post">
-				<textarea id="mytextarea"></textarea>
+				<textarea id="mytextarea"><?php echo $htmlcontent; ?></textarea>
 				</form>
 				</div>
 			</div>
@@ -81,3 +107,8 @@ app.filter('replace', [function () {
 
 </script>
 
+<?php 
+
+	mysqli_close($con);
+
+?>
