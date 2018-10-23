@@ -19,11 +19,10 @@ $query = mysqli_query($con,"SELECT * FROM cs_page where PageLink = '$PageName'  
 
 			$content = $rowx['TemplateFile'];
 			$htmlcontent = $rowx['htmlcontent'];
+			$PageID = $rowx['PageID'];
 
 
 	}
-
-
 
 
 
@@ -36,7 +35,7 @@ $query = mysqli_query($con,"SELECT * FROM cs_page where PageLink = '$PageName'  
 		<div class="col-md-10 p-0">
 			<div class="leftMenu_">
 				<div class="add-page_">
-				<form method="POST" id="publishpage_id" action="data/addPage">
+				<form method="POST" id="publishpage_id" action="data/editPage">
 				<div class="title-link">
 					<label>ADD TITLEs:</label>
 					<input type="text" name="page_title_" value="<?php echo $PageName; ?>" class="page_title_"><br>
@@ -45,6 +44,7 @@ $query = mysqli_query($con,"SELECT * FROM cs_page where PageLink = '$PageName'  
 					<input type="submit" name="publish_page" class="publishpage_" >
 				</div>
 				<input type="hidden" name="htmlcontent" value="" class="html_data">
+				<input type="hidden" name="PageID_" value="<?php echo $PageID; ?>" class="html_PageID">
 				<input type="hidden" name="template_file_field" value="" class="template_file_field">
 				</form>
 				</div>
@@ -59,7 +59,7 @@ $query = mysqli_query($con,"SELECT * FROM cs_page where PageLink = '$PageName'  
 			<div class="rightMenu">
 				<div class="controlers">
 				<a href="add-page" class="secprimary_btn">ADD NEW PAGE</a>
-				<a href="#" class="secprimary_btn publish_page_btn">PUBLISH PAGE</a>
+				<a href="javaScript:void(0);" class="secprimary_btn publish_page_btn">PUBLISH PAGE</a>
 				</div>
 				<div class="choose-tem">
 					<div class="temp-title_">Choose Template:</div>
