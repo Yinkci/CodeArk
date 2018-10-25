@@ -32,3 +32,37 @@
     right: 0;
     position: absolute;
 }
+.install-site input {
+    display: block;
+    width: 100%;
+    padding: 4px 7px;
+    margin: 5px 0px;
+    border: 1px solid white;
+    font-size: 14px;
+}
+.install-site img {
+    margin: auto !important;
+    text-align: center !important;
+    display: block;
+    margin-bottom: 20px !important;
+}
+.install-site {
+    width: 600px;
+    margin: auto;
+    background-color: #0794f3;
+    padding: 53px 20px 100px 20px;
+    margin-top: 5%;
+    position: relative;
+}
+.install-site label {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.install-site input[type="submit"] {
+    width: 100px;
+    margin: 40px 20px;
+    float: right;
+    right: 0;
+    position: absolute;
+}
