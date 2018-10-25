@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = $_POST['local_name'];
 $username =$_POST['user_name'];
 $password =$_POST['pass_word'];
@@ -9,7 +10,7 @@ $cs_home_url = $prefix."_cs_home_url";
 $cs_page = $prefix."_cs_page";
 $login = $prefix."_login";
 
-
+$_SESSION["prefix"]=$login;
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);

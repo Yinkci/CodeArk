@@ -5,7 +5,7 @@
 </head>
 	<?php include ("inc/links.php");?>
 <body>
-	<form method="POST" action="install-site">
+	<form method="POST" action="install-site-db">
 		<div class="install-site">
 			<img src="assets/img/codeark.png">
 			<label>Your Website Title :</label>
