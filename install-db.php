@@ -24,7 +24,7 @@ if ($conn->query($sql) === TRUE) {
 
 
 	$conn_table = new mysqli($servername, $username, $password, $DbName);
-
+// Create table
 $table1 = "CREATE TABLE $cs_addmenu (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     USERNAME VARCHAR(30) NOT NULL,
@@ -40,8 +40,20 @@ $table2 = "CREATE TABLE $cs_home_url  (
     TEXT VARCHAR(30) NOT NULL
     )";
 
+$table3 = "CREATE TABLE $cs_page  (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    TITLE VARCHAR(30) NOT NULL,
+    TEXT VARCHAR(30) NOT NULL
+    )";
 
-$tables = [$table1, $table2];
+ $table4 = "CREATE TABLE $login  (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    TITLE VARCHAR(30) NOT NULL,
+    TEXT VARCHAR(30) NOT NULL
+    )";
+
+
+$tables = [$table1, $table2, $table3, $table4];
 
 foreach($tables as $k => $sql){
     $query = @$conn_table->query($sql);
@@ -58,8 +70,6 @@ foreach($tables as $k => $sql){
     echo "Error creating database: " . $conn->error;
 }
 
-
-// sql to create table
 
 
 
