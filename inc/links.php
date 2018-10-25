@@ -21,6 +21,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/cs-addmenu-style.css">
 <link rel="stylesheet" type="text/css" href="assets/css/add-page-style.css">
 <link rel="stylesheet" type="text/css" href="assets/css/page-style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/installation-style.css">
 <!-- FONTAWESOME -->
 <link rel="stylesheet" type="text/css" href="vendors/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
 <!-- BOOSTRAP 4 -->

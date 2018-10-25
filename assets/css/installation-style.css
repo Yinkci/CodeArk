@@ -1,0 +1,34 @@
+.create-db input {
+    display: block;
+    width: 100%;
+    padding: 4px 7px;
+    margin: 5px 0px;
+    border: 1px solid white;
+    font-size: 14px;
+}
+.create-db img {
+    margin: auto !important;
+    text-align: center !important;
+    display: block;
+    margin-bottom: 20px !important;
+}
+.create-db {
+    width: 600px;
+    margin: auto;
+    background-color: #0794f3;
+    padding: 53px 20px 100px 20px;
+    margin-top: 5%;
+    position: relative;
+}
+.create-db label {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.create-db input[type="submit"] {
+    width: 100px;
+    margin: 40px 20px;
+    float: right;
+    right: 0;
+    position: absolute;
+}
