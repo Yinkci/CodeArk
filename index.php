@@ -8,7 +8,7 @@
 <?php
 $config = file_exists("config.php");
 if($config == 1):
-echo "already insatlled!";
+header("location: cs-login");
 else:
 
 ?>
