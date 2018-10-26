@@ -20,4 +20,4 @@ if(isset($_POST['next'])){
 }
 session_destroy();
   
-
+header("location: cs-login");
