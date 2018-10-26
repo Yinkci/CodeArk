@@ -13,6 +13,7 @@ if(isset($_POST['next'])){
 	$username = $_SESSION["username"];
 	$password = $_SESSION["password"];
 	$DbName = $_SESSION["DbName"];
+	$cs_page = $_SESSION["cs_page"];
 	$con = mysqli_connect($servername, $username, $password);
 	$db = mysqli_select_db($con,$DbName); 
 	$query = mysqli_query($con,"INSERT INTO $login(username,password)VALUES('$login_user','$login_password')");
@@ -22,13 +23,14 @@ if(isset($_POST['next'])){
 $con_ = str_replace(" ", "", "$ con");
 $db_ = str_replace(" ", "", "$ db");
 $cs_prefix = str_replace(" ", "", "$ cs_prefix");
-$success = settype($varname, 'string');
+$cs_page_ = str_replace(" ", "", "$ cs_page");
 $myfile = fopen("config.php", "w");
 $var = "
 <?php
 $con_ = mysqli_connect('$servername', '$username', '$password');
 $db_ = mysqli_select_db( $con_ ,'$DbName');
 $cs_prefix = '$login';
+$cs_page_ = '$cs_page';
 ";
 
 $strvar = (string) $var; // Casts to string

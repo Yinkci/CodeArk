@@ -15,6 +15,8 @@ $_SESSION["servername"]=$servername;
 $_SESSION["username"]=$username;
 $_SESSION["password"]=$password;
 $_SESSION["DbName"]=$DbName;
+$_SESSION["cs_page"]=$cs_page;
+
 
 
 // Create connection
@@ -45,10 +47,20 @@ $table2 = "CREATE TABLE $cs_home_url  (
     )";
 
 $table3 = "CREATE TABLE $cs_page  (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    TITLE VARCHAR(30) NOT NULL,
-    TEXT VARCHAR(30) NOT NULL
+    PageID INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    PageName VARCHAR(30) NOT NULL,
+    PageLink VARCHAR(30) NOT NULL,
+    TemplateFile VARCHAR(30) NOT NULL,
+    htmlcontent VARCHAR(30) NOT NULL
     )";
+
+
+
+
+
+
+
+
 
  $table4 = "CREATE TABLE $login  (
     username VARCHAR(30) NOT NULL,

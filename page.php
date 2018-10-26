@@ -16,7 +16,7 @@ require ("dashboard-header.php");
 			<?php 
 
 
-			$ses_sqli = mysqli_query($con,"SELECT * FROM cs_page ORDER BY PageID");
+			$ses_sqli = mysqli_query($con,"SELECT * FROM $cs_page ORDER BY PageID");
 			$x = 1;
 
 
