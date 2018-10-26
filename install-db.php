@@ -11,6 +11,11 @@ $cs_page = $prefix."_cs_page";
 $login = $prefix."_login";
 
 $_SESSION["prefix"]=$login;
+$_SESSION["servername"]=$servername;
+$_SESSION["username"]=$username;
+$_SESSION["password"]=$password;
+$_SESSION["DbName"]=$DbName;
+
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
@@ -27,12 +32,10 @@ if ($conn->query($sql) === TRUE) {
 	$conn_table = new mysqli($servername, $username, $password, $DbName);
 // Create table
 $table1 = "CREATE TABLE $cs_addmenu (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    USERNAME VARCHAR(30) NOT NULL,
-    EMAIL VARCHAR(40) NOT NULL,
-    DISCOUNT VARCHAR(5),
-    PASSW CHAR(128),
-    ROLE VARCHAR(9)
+    OrderID INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    menu_title VARCHAR(30) NOT NULL,
+    cs_Menus VARCHAR(40) NOT NULL,
+    cs_Links VARCHAR(5),
     )";
 
 $table2 = "CREATE TABLE $cs_home_url  (
@@ -48,9 +51,8 @@ $table3 = "CREATE TABLE $cs_page  (
     )";
 
  $table4 = "CREATE TABLE $login  (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    TITLE VARCHAR(30) NOT NULL,
-    TEXT VARCHAR(30) NOT NULL
+    username VARCHAR(30) NOT NULL,
+    password VARCHAR(30) NOT NULL
     )";
 
 
