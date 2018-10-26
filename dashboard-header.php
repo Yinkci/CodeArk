@@ -29,7 +29,7 @@
 				<div class="d-table">
 					<div class="d-cell">
 						<img src="assets/img/codeark.png" class="d-none  d-xl-inline-block ark-logo">
-						<a href="#"><i class="fas fa-user-circle"></i> Logout</a>
+						<a href="logout.php"><i class="fas fa-user-circle"></i> Logout</a>
 					</div>
 				</div>
 			</div>

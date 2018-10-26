@@ -28,7 +28,7 @@ echo "string".$template_file;
 $query = mysqli_query($con,"INSERT INTO $cs_page(PageID,PageName,PageLink,TemplateFIle,htmlcontent)VALUES('$PageID','$page_title_','$page_link_','$template_file','$htmlcontent')");
 mysqli_close($con);
 
-// header("location:".home_url()."/page");
+header("location:".home_url()."/page");
 
 
 

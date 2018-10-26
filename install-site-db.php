@@ -40,4 +40,4 @@ echo $var; // Will cast to string implicitly
 fwrite($myfile, $var);
 fclose($myfile);
 session_destroy();
-// header("location: cs-login");
+header("location: cs-login");

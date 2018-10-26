@@ -45,7 +45,7 @@ require("data/database.php");
 <?php
 $config = file_exists("config.php");
 if($config == 1):
-header("location: cs-admin");
+require ("session.php"); 	
 else:
 
 ?>
