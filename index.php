@@ -9,32 +9,37 @@
 
 <?php
 require("data/database.php");
-$PageName = $_GET['page']; 
-if ($PageName):
-	$query = mysqli_query($con,"SELECT * FROM $cs_page where PageLink = '$PageName'  ");
-			$row = mysqli_num_rows($query);
-	 	while($rowx = mysqli_fetch_array($query)){
-				$namae = $rowx['PageLink'];
-				$content = $rowx['TemplateFile'];
-				$htmlcontent = $rowx['htmlcontent'];
-	 	}
-	 // Check page if exist
-	if ($row==1) {
-		if($content == "Default Template"):
-		echo $htmlcontent;
+
+	if (isset($_GET['page'])):
+		$PageName = $_GET['page']; 
+		$query = mysqli_query($con,"SELECT * FROM $cs_page where PageLink = '$PageName'  ");
+				$row = mysqli_num_rows($query);
+		 	while($rowx = mysqli_fetch_array($query)){
+					$namae = $rowx['PageLink'];
+					$content = $rowx['TemplateFile'];
+					$htmlcontent = $rowx['htmlcontent'];
+		 	}
+		 // Check page if exist
+		if ($row==1) {
+			if($content == "Default Template"):
+			echo $htmlcontent;
+			
+			else:
+			$temp = "./templates/".$content.".php";
+			include($temp);
+			endif;
+		 }
+		else{
+			$PAGE_NOT_FOUND = "./404/404.php";
+			include($PAGE_NOT_FOUND);
+		 }
+			mysqli_close($con);
+
+
+
 		
-		else:
-		$temp = "./templates/".$content.".php";
-		include($temp);
-		endif;
-	 }
-	else{
-		$PAGE_NOT_FOUND = "./404/404.php";
-		include($PAGE_NOT_FOUND);
-	 }
-		mysqli_close($con);
-	
-else:
+	else:
+
 ?>
 
 <?php
