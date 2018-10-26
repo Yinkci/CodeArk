@@ -16,6 +16,8 @@ $_SESSION["username"]=$username;
 $_SESSION["password"]=$password;
 $_SESSION["DbName"]=$DbName;
 $_SESSION["cs_page"]=$cs_page;
+$_SESSION["cs_addmenu"]=$cs_addmenu;
+
 
 
 
@@ -37,7 +39,7 @@ $table1 = "CREATE TABLE $cs_addmenu (
     OrderID INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     menu_title VARCHAR(30) NOT NULL,
     cs_Menus VARCHAR(40) NOT NULL,
-    cs_Links VARCHAR(5),
+    cs_Links VARCHAR(5)
     )";
 
 $table2 = "CREATE TABLE $cs_home_url  (
@@ -53,12 +55,6 @@ $table3 = "CREATE TABLE $cs_page  (
     TemplateFile VARCHAR(250) NOT NULL,
     htmlcontent TEXT NOT NULL
     )";
-
-
-
-
-
-
 
 
 

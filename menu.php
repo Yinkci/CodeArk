@@ -1,4 +1,5 @@
-<?php require ("dashboard-header.php"); ?>
+<?php require ("dashboard-header.php");
+ ?>
 <div class="col-md-12 col-lg-12 col-xl-10 dash-container">
 	<!-- your code here -->
 
@@ -24,16 +25,18 @@
 	</div>
 	<?php
 	function menu_title(){
-		require("data/database.php");
-		$ses_sqli = mysqli_query($con,"SELECT * FROM cs_addmenu");
+include (__DIR__."/data/database.php");
+		
+		$ses_sqli = mysqli_query($con,"SELECT * FROM $cs_addmenu");
 		$row = mysqli_fetch_array($ses_sqli);
 			$menu_title = $row['menu_title'];
 			echo $menu_title;
 		
 	}
 	function call_menu() {
-		require("data/database.php");
-		$ses_sqli = mysqli_query($con,"SELECT * FROM cs_addmenu ORDER BY OrderID");
+include (__DIR__."/data/database.php");
+		
+		$ses_sqli = mysqli_query($con,"SELECT * FROM $cs_addmenu ORDER BY OrderID");
 		$x = 1;
 		echo "<div class='addMenu_input'>";
 		echo "<div id='sortable_nav' class='sortable ui-sortable'>";

@@ -6,7 +6,7 @@
 		<ul class="menu-sen">
 			<li><a href="#"><i class="fas fa-code"></i> Dashboard</a></li>
 			<li><a href="menu"><i class="fas fa-th-list"></i> Menu</a></li>
-			<li><a href="http://localhost:8888/CodeArk/page"><i class="fas fa-sticky-note"></i> Page</a></li>
+			<li><a href="http://localhost/CodeArk/page"><i class="fas fa-sticky-note"></i> Page</a></li>
 			<li><a href="#"><i class="fas fa-cog"></i> Theme Settings</a></li>
 			<li><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li>
 		</ul>
@@ -42,7 +42,7 @@
 			<ul class="menu-sen">
 				<li><a href="#"><i class="fas fa-code"></i> Dashboard</a></li>
 				<li><a href="menu"><i class="fas fa-th-list"></i> Menu</a></li>
-				<li><a href="http://localhost:8888/CodeArk/page"><i class="fas fa-sticky-note"></i> Page</a></li>
+				<li><a href="http://localhost/CodeArk/page"><i class="fas fa-sticky-note"></i> Page</a></li>
 				<li><a href="#"><i class="fas fa-cog"></i> Theme Settings</a></li>
 				<li><a href="#"><i class="fas fa-wrench"></i> C.A Settings</a></li>
 			</ul>
