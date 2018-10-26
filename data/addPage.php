@@ -5,13 +5,16 @@ define('__ROOTs__', dirname(dirname(__FILE__)));
 require (__ROOTs__."/header.php"); 
 
 	$ses_sqli = mysqli_query($con,"SELECT * FROM $cs_page ORDER BY PageID");
-	$x = 1;
+	$i = 0;
 
 
 	while($row = mysqli_fetch_array($ses_sqli)){
 		$PageID = $row['PageID'] + 1;
-
+	$i++;
 	}
+	if($i==0){
+        $PageID = 1;
+    }
 
 $page_title_ = $_POST["page_title_"];
 $template_file = $_POST["template_file_field"];
