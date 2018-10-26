@@ -5,6 +5,13 @@
 </head>
 	<?php include ("inc/links.php");?>
 <body>
+<?php
+$config = file_exists("config.php");
+if($config == 1):
+echo "already insatlled!";
+else:
+
+?>
 	<form method="POST" action="install-db">
 		<div class="create-db">
 			<img src="assets/img/codeark.png">
@@ -21,6 +28,9 @@
 			<input type="submit" name="next" value="Next">
 		</div>
 	</form>
+<?php
+endif;
+?>
 </body>
 </html>
 
