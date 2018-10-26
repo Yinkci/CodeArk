@@ -1,5 +1,5 @@
 <?php 
-require ("database.php"); 
+include ("data/database.php");
 define('__ROOTs__', dirname(dirname(__FILE__))); 
 // require ("header.php"); 
 require ("dashboard-header.php");

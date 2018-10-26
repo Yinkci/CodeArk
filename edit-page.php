@@ -1,5 +1,6 @@
 <?php require ("dashboard-header.php");
-require ("database.php"); ?>
+include (__DIR__."/data/database.php");
+ ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <div class="col-md-12 col-lg-10 col-xl-10 dash-container">
@@ -7,9 +8,8 @@ require ("database.php"); ?>
 	<?php
 
 
-
 $PageName = $_GET['edit']; 
-$query = mysqli_query($con,"SELECT * FROM cs_page where PageLink = '$PageName'  ");
+$query = mysqli_query($con,"SELECT * FROM $cs_page where PageLink = '$PageName'  ");
 		$row = mysqli_num_rows($query);
 
 

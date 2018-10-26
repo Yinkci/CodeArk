@@ -1,5 +1,6 @@
 <?php 
-require ("database.php"); 
+ob_start();
+include (__DIR__."/database.php");
 define('__ROOTs__', dirname(dirname(__FILE__))); 
 require (__ROOTs__."/header.php"); 
 
@@ -20,7 +21,7 @@ $page_link_ = strtolower(str_replace(" ", "-",$_POST["page_link_"]));
 
 
 echo "string".$template_file;
-$query = mysqli_query($con,"UPDATE  cs_Page SET PageName='$page_title_',PageLink='$page_link_',TemplateFile='$template_file',htmlcontent='$htmlcontent' WHERE PageID='$PageID'");
+$query = mysqli_query($con,"UPDATE  $cs_page SET PageName='$page_title_',PageLink='$page_link_',TemplateFile='$template_file',htmlcontent='$htmlcontent' WHERE PageID='$PageID'");
 
 
 mysqli_close($con);

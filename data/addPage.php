@@ -1,6 +1,6 @@
 <?php 
 ob_start();
-require ("database.php"); 
+include (dirname(dirname(__FILE__))."/data/database.php");
 define('__ROOTs__', dirname(dirname(__FILE__))); 
 require (__ROOTs__."/header.php"); 
 

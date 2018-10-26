@@ -48,10 +48,10 @@ $table2 = "CREATE TABLE $cs_home_url  (
 
 $table3 = "CREATE TABLE $cs_page  (
     PageID INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    PageName VARCHAR(30) NOT NULL,
-    PageLink VARCHAR(30) NOT NULL,
-    TemplateFile VARCHAR(30) NOT NULL,
-    htmlcontent VARCHAR(30) NOT NULL
+    PageName VARCHAR(250) NOT NULL,
+    PageLink VARCHAR(250) NOT NULL,
+    TemplateFile VARCHAR(250) NOT NULL,
+    htmlcontent TEXT NOT NULL
     )";
 
 
