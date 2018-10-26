@@ -16,7 +16,7 @@ if (isset($_POST["submit"])) {
 		$username = mysqli_escape_string($con,$username);
 		$password = mysqli_escape_string($con,$password);
 
-		$query = mysqli_query($con,"SELECT * FROM login where username = '$username' AND password = '$password' ");
+		$query = mysqli_query($con,"SELECT * FROM ".$cs_prefix." where username = '$username' AND password = '$password' ");
 		$row = mysqli_num_rows($query);
 
 		if ($row==1) {
