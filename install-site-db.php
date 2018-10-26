@@ -7,7 +7,8 @@ if(isset($_POST['next'])){
 	echo "string :".$_SESSION["username"];
 	$login_user = $_POST["user_name"];
 	$login_password = $_POST["pass_word"];
-	$login = $_SESSION["prefix"]."_login";
+	$login = $_SESSION["prefix"];
+	echo $login;
 	$servername = $_SESSION["servername"];
 	$username = $_SESSION["username"];
 	$password = $_SESSION["password"];
